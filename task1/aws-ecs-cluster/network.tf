@@ -1,3 +1,9 @@
+#
+#This network.tf will have details related to component with n/w usage i.e. VPC, internet gateway for internet access, private, public subnet
+# route , route table association, application load balanger, security group for lb and other, target group and auto scaling of esc cluster service
+# based on memory and cpu utilization
+#
+
 resource "aws_vpc" "aws-vpc" {
   cidr_block           = "10.10.0.0/16"
   enable_dns_hostnames = true

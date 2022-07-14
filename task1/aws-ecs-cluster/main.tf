@@ -1,4 +1,6 @@
-
+#
+# This main.tf will only have provider details
+#
 terraform {
   required_providers {
     aws = {

@@ -1,5 +1,5 @@
-# variables.tf | Auth and Application variables
-
+# variables.tf here we will be declaring all the variable being used or can be used 
+# its value are being defined in terraform.tfvar
 variable "aws_access_key" {
   type        = string
   description = "AWS Access Key"

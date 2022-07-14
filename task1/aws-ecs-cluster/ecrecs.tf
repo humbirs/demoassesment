@@ -1,3 +1,10 @@
+#
+# This ecrecs.tf will have details for ECR (however not using this for our deployment), also it will create ECS cluster and association of IAM role for task execution, 
+# it will aslo create ECS task defination which is where we are using a variable to pass on the image URL to be deployed on ECS cluster 
+# this task defination is of FARGATE type which help us not have EC2 instance permanent running for ECS cluster
+# this is also creating ECS service to host the task and adding it to LB and container.
+#
+
 
 resource "aws_ecr_repository" "aws-ecr" {
   name = "${var.app_name}-${var.app_environment}-ecr"
